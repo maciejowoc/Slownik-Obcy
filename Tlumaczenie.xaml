@@ -1,0 +1,25 @@
+﻿<Page x:Class="SlownikObcy.Tlumaczenie"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:local="clr-namespace:SlownikObcy"
+      mc:Ignorable="d" 
+      d:DesignHeight="450" d:DesignWidth="800"
+      Title="Tlumaczenie">
+
+    <Grid>
+        <Grid.Background>
+            <ImageBrush Stretch="Fill" ImageSource="ksiazka.jpg" />
+        </Grid.Background>
+        <Label Content="Wybierz język:" HorizontalAlignment="Left" Height="33" Margin="64,46,0,0" VerticalAlignment="Top" Width="163" Foreground="#FFCBC7C2" FontSize="14"/>
+        <ComboBox x:Name="WyborJezyka" HorizontalAlignment="Left" Height="27" Margin="64,79,0,0" VerticalAlignment="Top" Width="191" SelectionChanged="WyborJezyka_SelectionChanged"/>
+        <TextBox x:Name="SzukanaFraza" HorizontalAlignment="Left" Height="27" Margin="64,141,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="283" IsEnabled="False" TextChanged="SzukanaFraza_TextChanged"/>
+        <TextBlock x:Name="BlokWynikow" HorizontalAlignment="Left" Height="204" Margin="64,197,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="675" Background="#CCE0DCD5" FontSize="18" FontFamily="Times New Roman"/>
+        <Button x:Name="Powrot" Content="Powrót do menu" HorizontalAlignment="Left" Height="52" Margin="607,35,0,0" VerticalAlignment="Top" Width="132" Click="Powrot_Click"/>
+        <Label Content="Wpisz szukane słowo:" HorizontalAlignment="Left" Height="31" Margin="64,110,0,0" VerticalAlignment="Top" Width="160" Foreground="#FFCBC7C2" FontSize="14"/>
+        <Label Content="Wyniki wyszukiwania:" HorizontalAlignment="Left" Height="44" Margin="64,167,0,0" VerticalAlignment="Top" Width="228" Foreground="#FFCBC7C2" FontSize="14"/>
+        <Button x:Name="Resetuj" Content="Wyczyść" HorizontalAlignment="Left" Height="52" Margin="455,35,0,0" VerticalAlignment="Top" Width="132" Click="Resetuj_Click"/>
+
+    </Grid>
+</Page>
